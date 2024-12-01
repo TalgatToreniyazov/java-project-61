@@ -2,4 +2,8 @@ FROM ubuntu:latest
 LABEL authors="Aidana"
 
 ENTRYPOINT ["top", "-b"]
-COPY . /project
+WORKDIR /project
+RUN mkdir -p /project/app
+RUN ls -l /project
+COPY . /project/app
+
