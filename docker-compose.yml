@@ -3,8 +3,9 @@ services:
   app:
     build:
       context: .
+      dockerfile: ./path/to/your/Dockerfile
     ports:
       - "8080:8080"
     volumes:
-      - ./code/app:/project/code/app
+      - E:/Java/IdeaProjects/app/code/app:/project/code/app
 
